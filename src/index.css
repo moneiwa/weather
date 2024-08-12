@@ -1,37 +1,97 @@
-*{
-  margin:0px;
-  padding:0px;
-  font-family: "Poppins";
-  box-sizing:border-box;
-}
-body{
-  height: 100vh;
+/* src/ToDoList.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-size: cover;
 }
 .container {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 25px;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-
-@media screen and (min-width:800px) {
-  .container {
-    flex-direction: row;
-  }
+.input {
+  margin-bottom: 20px;
 }
 
-.app-container {
-  background-color: var(--bg-color);
-  border-radius: 40px;
-  box-shadow: -2px -2px 4px 0px #ffffff, 50px 50px 50px 0px rgba(0, 0, 0, .25);
-  display: block;
-  flex: 1;
-  min-height: 500px;
-  max-width: 350px;
-  margin-bottom: 25px;
-  overflow: hidden;
-  padding: 30px;
+.input input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.input button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.displayData {
+  margin-top: 20px;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.hourly-forecast, .daily-forecast {
+  width: 48%;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hourly-forecast h2, .daily-forecast h2 {
+  margin-bottom: 15px;
+}
+
+.hourly-list, .daily-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hour {
+  width: 23%;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.day {
+  width: 30%;
+  background-color: #d0d0d0;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hour img, .day img {
+  width: 50px;
+  height: 50px;
+}
+
+.hour p, .day p {
+  margin: 5px 0;
 }
