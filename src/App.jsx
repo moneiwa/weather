@@ -1,4 +1,4 @@
-can my react js code be simplified to begginer friendly: import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Axios from 'axios';
 
@@ -19,7 +19,7 @@ function App() {
     };
 
     const fetchWeatherByLocation = (lat, lon) => {
-        // Fetch weather data
+
         Axios.get(${api.base}/weather?lat=${lat}&lon=${lon}&units=metric&appid=${api.key})
             .then(response => {
                 const { coord } = response.data;
@@ -34,7 +34,7 @@ function App() {
                     image: response.data.weather[0].icon
                 });
 
-                // Fetch daily and hourly forecasts using One Call API
+
                 Axios.get(${api.base}/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,alerts&units=metric&appid=${api.key})
                     .then(response => {
                         console.log(response.data);
@@ -51,7 +51,7 @@ function App() {
     };
 
     useEffect(() => {
-        // Get geolocation on component mount
+
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 setLatitude(position.coords.latitude);
@@ -86,7 +86,7 @@ function App() {
                     image: response.data.weather[0].icon
                 });
 
-                // Fetch daily and hourly forecasts using One Call API
+              
                 Axios.get(${api.base}/onecall?lat=${coord.lat}&lon=${coord.lon}&exclude=current,minutely,alerts&units=metric&appid=${api.key})
                     .then(response => {
                         console.log(response.data);
