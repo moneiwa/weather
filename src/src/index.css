@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background: url(./assets/gg.jpg) no-repeat center center fixed;
+  color: white; 
+}
+
+
+.container {
+  padding: 20px;
+}
+
+
+
+.container.dark-mode {
+  background: url(./assets/g.jfif) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+.input {
+  margin-bottom: 20px;
+  
+}
+
+
+.input input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.displayData {
+  margin-top: 20px;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.hourly-forecast, .daily-forecast {
+  width: 100%; 
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap;
+  max-width: 100%; 
+  scrollbar-width: thin; 
+  scrollbar-color: #b8b8b8 #f5f5f5;
+}
+
+.hourly-list, .daily-list {
+  display: flex;
+  gap: 15px;
+  white-space: nowrap; 
+}
+
+.hourly-forecast::-webkit-scrollbar, .daily-forecast::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.hourly-forecast::-webkit-scrollbar-thumb, .daily-forecast::-webkit-scrollbar-thumb {
+  background: #b8b8b8; 
+  border-radius: 4px; 
+}
+
+.hourly-forecast::-webkit-scrollbar-track, .daily-forecast::-webkit-scrollbar-track {
+  background: #f5f5f5; 
+}
+
+.Other-locations {
+  margin-top: 20px;
+}
+
+
+.day {
+  width: 150px; 
+  background-color: #333; 
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hour img, .day img {
+  width: 50px;
+  height: 50px;
+}
+
+.hour p, .day p {
+  margin: 5px 0;
+}
+
+.te{
+  color: black;
+}
+button {
+  margin-right: 10px;
+}
+
+.container.dark-mode .input input[type="text"] {
+  border: 1px solid #666;
+}
+
+.container.dark-mode .input button {
+  background-color: #444;
+}
+
+.container.dark-mode .hourly-forecast, .container.dark-mode .daily-forecast {
+  background-color: #1e1e1e;
+}
+
+.container.dark-mode .day {
+  background-color: #444;
+}
+
+.container.dark-mode .weather-icon img {
+  filter: invert(1); 
+}
+
+
+
+
+
+.notification-banner {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.notification-banner button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-banner button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+
+.policy-button {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.policy-button:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+
+
+.faq-toggl{
+  padding: 5px;
+color: #007BFF;
+background-color: black;
+}
+
+.faq-container{
+  margin-left: 1000px;
+}
