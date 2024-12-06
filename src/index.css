@@ -17,15 +17,19 @@ body {
 }
 
 
+
 .container.dark-mode {
-  background-color: #121212;
+  background: url(./assets/g.jfif) no-repeat center center fixed;
+  background-size: cover;
   color: white;
 }
 
 
 .input {
   margin-bottom: 20px;
+  
 }
+
 
 .input input[type="text"] {
   padding: 8px;
@@ -109,7 +113,9 @@ body {
   margin: 5px 0;
 }
 
-
+.te{
+  color: black;
+}
 button {
   margin-right: 10px;
 }
@@ -133,3 +139,79 @@ button {
 .container.dark-mode .weather-icon img {
   filter: invert(1); 
 }
+
+
+
+
+
+.notification-banner {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.notification-banner button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-banner button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+
+.policy-button {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.policy-button:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+
+
+.faq-toggl{
+  padding: 5px;
+color: #007BFF;
+background-color: black;
+}
+
+.faq-container{
+  margin-left: 600px;
+  margin-top: 200PX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
